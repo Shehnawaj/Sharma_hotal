@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+
+    body {
+      margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Login box */
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: slideUp 1s ease;
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #00c6ff;
+  outline: none;
+}
+
+/* Button */
+button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+}
+
+/* Link */
+.login-container a {
+  color: #0072ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form method="post" action=' {% url 'thank' %}'>
+      {% csrf_token %}
+      <input type="text" placeholder="Username" name='user' required />
+      <input type="password" placeholder="Password" name='pw' required />
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#">Sign up</a></p>
+  </div>
+</body>
+</html>

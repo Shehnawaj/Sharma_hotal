@@ -1,0 +1,44 @@
+/* Gradient Header */
+.app-header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-bottom: 3px solid #fff;
+}
+
+/* Card Custom Look */
+.app-card {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #000;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.app-card:hover {
+  transform: scale(1.02);
+}
+
+/* Marquee Styling */
+.marquee-box {
+  background: #343a40;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer-bar {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+}
+
+/* Button Hover */
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 576px) {
+  body {
+    max-width: 400px;
+    margin: auto;
+  }
+}

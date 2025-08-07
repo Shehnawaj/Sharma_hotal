@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thank-you-box {
+  max-width: 600px;
+}
+
+.thank-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.custom-btn {
+  background-color: #007bff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

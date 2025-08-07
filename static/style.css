@@ -1,0 +1,135 @@
+/* Reset and Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  animation: slideIn 2s ease-out;
+}
+
+marquee {
+  font-weight: bold;
+  color: yellow;
+  margin-top: 10px;
+}
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+/* Main Section */
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.welcome {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.welcome h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+.welcome p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+button {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
